@@ -4,6 +4,7 @@
 # sum = 0
 # print no. of combination possible of lenght 4
 # which sum = 0
+
 from itertools import combinations
 num = list(map(int,input().split(',')))
 s = int(input())
