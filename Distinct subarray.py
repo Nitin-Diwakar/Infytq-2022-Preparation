@@ -16,7 +16,6 @@ n2 = int(input())
 #generate array from n1 to n2 using list comprehension(it is handy to use)
 array = [i for i in range(n1,n2+1)]
 print(array)
-
 #generating a subarray with first or last digit different
 subArray = [array[i:j+1] for i in range(len(array)) for j in range(i,len(array))]
 
