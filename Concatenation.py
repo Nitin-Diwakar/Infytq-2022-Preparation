@@ -11,10 +11,9 @@ Num2: 5148
 output: 5248+20 = 5168
 """
 
-array = list(map(int,input().split(",")))
-num1 = sum(array[:array.index(5)] + array[array.index(8)+1:])
-l = array[array.index(5):array.index(8)+1]
-num2 = ""
-for i in l:
-    num2 += str(i)
-print(num1+ int(num2))
+lst = list(map(int, input().split(",")))
+num1 = sum(lst[:lst.index(5)]) + sum(lst[lst.index(8)+1:])
+num2 = lst[lst.index(5):lst.index(8)+1]
+num2 = [str(int) for int in num2]
+num2 = ''.join(num2)
+print(num1+int(num2))
